@@ -1,0 +1,46 @@
+<section class="portfolio-section section">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="heading">
+                    <h3><b>Portfolio</b></h3>
+                    <h6 class="font-lite-black"><b>MY WORK</b></h6>
+                </div>
+            </div><!-- col-sm-4 -->
+            <div class="col-sm-8">
+                <div class="portfolioFilter clearfix margin-b-80">
+                    <a href="#" data-filter="*" class="current"><b>ALL</b></a>
+                    <!-- <a href="#" data-filter=".web-design"><b>WEB APP</b></a>
+                    <a href="#" data-filter=".ios-app"><b>iOS APP</b></a>
+                    <a href="#" data-filter=".graphic-design"><b>ANDROID APP</b></a> -->
+                    <a href="#" *ngFor="let skill of skillMenu">
+                        <b>{{ skill.subject }}</b>
+                    </a>
+                </div><!-- portfolioFilter -->
+            </div><!-- col-sm-8 -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+    <div class="portfolioContainer">
+
+        <div class="p-item web-design">
+            <a href="images/gf-chat.png" data-fluidbox>
+                <img src="images/gf-chat.png" alt=""></a>
+        </div><!-- p-item -->
+
+        <div class="p-item ios-app">
+            <a href="images/conpass.jpg" data-fluidbox>
+                <img src="images/conpass.jpg" alt=""></a>
+        </div><!-- p-item -->
+
+        <div class="p-item ios-app">
+            <a href="images/tos-eat.jpeg" data-fluidbox>
+                <img src="images/tos-eat.jpeg" alt=""></a>
+        </div><!-- p-item -->
+
+
+
+
+    </div><!-- portfolioContainer -->
+
+</section><!-- portfolio-section -->

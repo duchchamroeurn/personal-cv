@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
@@ -131,5 +132,10 @@
       }
     }
   },
-  "defaultProject": "personal-cv"
+  "defaultProject": "personal-cv",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styles": "scss"
+    }
+  }
 }
